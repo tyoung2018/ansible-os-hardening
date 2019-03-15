@@ -1,6 +1,7 @@
 ---
 - name: Set default sysctl parameters
   hosts: all
+  sysctl_file: /etc/sysctl.conf
   
 # Set vm.swappiness to 5 in /etc/sysctl.conf
 - sysctl:
